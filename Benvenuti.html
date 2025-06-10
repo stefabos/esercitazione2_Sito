@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)https://fad.its-ictpiemonte.it/pluginfile.php/65816/mod_resource/content/0/home.html -->
+<html lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benvenuti</title>
+    <style>
+        /* Stili di base e reset */
+        body {
+            background-color: #a7d9f7; /* Un azzurro chiaro e gradevole */
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column; /* Organizza gli elementi verticalmente: header, main, footer */
+            min-height: 100vh; /* Assicura che il body occupi tutta l'altezza della viewport */
+        }
+
+        /* Stili per l'intestazione (header) */
+        .header {
+            background-color: #347c9e; /* Blu più scuro per l'header */
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Contenitore principale per sidebar e contenuto */
+        .main-container {
+            display: flex; /* Flexbox per disporre sidebar e contenuto fianco a fianco */
+            flex-grow: 1; /* Permette al contenitore di espandersi e occupare lo spazio disponibile */
+            padding: 20px;
+            gap: 20px; /* Spazio tra sidebar e contenuto */
+        }
+
+        /* Stili per la barra laterale (sidebar) */
+        .sidebar {
+            width: 200px;
+            background-color: #6bb6d9; /* Blu intermedio per la sidebar */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Spazio tra i bottoni */
+            flex-shrink: 0; /* Impedisce alla sidebar di rimpicciolirsi */
+        }
+
+        .sidebar button {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: #347c9e; /* Blu dei bottoni */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .sidebar button:hover {
+            background-color: #2a6381; /* Blu più scuro al passaggio del mouse */
+            transform: translateY(-2px); /* Effetto leggero al passaggio del mouse */
+        }
+
+        /* Stili per il contenuto principale */
+        .content {
+            flex-grow: 1; /* Permette al contenuto di occupare lo spazio rimanente */
+            background-color: rgba(255, 255, 255, 0.9); /* Sfondo leggermente trasparente */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            color: #333;
+        }
+
+        .content h2 {
+            color: #347c9e;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Stili per il piè di pagina (footer) */
+        .footer {
+            background-color: #347c9e; /* Stesso blu dell'header */
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            margin-top: auto; /* Spinge il footer in fondo alla pagina */
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Benvenuti!</h1>
+    </div>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <button onclick="alert(&#39;Hai cliccato su About Me!&#39;)">About Me</button>
+            <button onclick="alert(&#39;Hai cliccato su News!&#39;)">News</button>
+        </div>
+        <div class="content">
+            <h2>Il tuo contenuto principale</h2>
+            <p>Qui puoi inserire il testo, le immagini, i video o qualsiasi altra informazione che vuoi mostrare ai tuoi visitatori. Questa è la sezione più importante della tua pagina web e puoi personalizzarla come preferisci.</p>
+            <p>Ad esempio, potresti parlare dei tuoi servizi, dei tuoi prodotti o del tuo progetto. L'obiettivo è mantenere l'attenzione dell'utente e fornirgli informazioni utili.</p>
+			<div>
+			<h2>Autori del sito:</h2>
+			  <ul>
+				<li>**Autore 1:** Leonardo da Vinci (15 aprile 1452)</li>
+				<li>**Autore 2:** Jane Austen (16 dicembre 1775)</li>
+				<li>**Autore 3:** William Shakespeare (26 aprile 1564)</li>
+			  </ul>
+			</div>
+		</div>
+
+
+    </div>
+
+    <div class="footer">
+        <p>© 2025 La Tua Pagina. Tutti i diritti riservati.</p>
+    </div>
+
+</body></html>
